@@ -1,7 +1,7 @@
 const storyConfig = {
   title: "Is Convenience Priced In?",
   style: "mapbox://styles/yesan7/cmtq1trdo003o01sd4w2n6ykh",
-  accessToken: "MAPBOX_PUBLIC_TOKEN",
+  accessToken: "pk.eyJ1IjoieWVzYW43IiwiYSI6ImNsdXl4bjFvejEwbGMyaW52YzhwaWJ0Y3IifQ.9oX0IzdCaaT6LzXirBBbDA",
   useLocalDataFallback: true,
   initialView: { center: [103.8198, 1.3521], zoom: 10.55, pitch: 0, bearing: 0 },
   chapters: [
