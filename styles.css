@@ -11,9 +11,10 @@
 }
 
 * { box-sizing: border-box; }
-html { scroll-behavior: smooth; }
+html { scroll-behavior: smooth; overflow-x: clip; }
 body {
   margin: 0;
+  overflow-x: clip;
   color: var(--ink);
   background: #eef1ee;
   font-family: "Karla", Arial, sans-serif;
@@ -267,7 +268,7 @@ button:focus-visible {
     background: linear-gradient(180deg, rgba(255,255,255,0.7), rgba(255,255,255,0.98) 55%, #fff 100%);
   }
   .hero-inner { width: calc(100vw - 40px); margin: 0 20px; padding: 90px 0 42px; }
-  .hero h1 { font-size: clamp(56px, 18vw, 82px); }
+  .hero h1 { font-size: clamp(48px, 13.6vw, 62px); line-height: 0.88; }
   .intro { font-size: 16px; }
   #chapters { padding-top: 8vh; }
   .step { min-height: 72vh; margin-bottom: 26vh; }

@@ -145,7 +145,7 @@ function opacityProperty(layer) {
   return { fill: "fill-opacity", circle: "circle-opacity", line: "line-opacity", symbol: "icon-opacity" }[mapLayer.type] || null;
 }
 
-function showChapter(chapter, index) {
+function showChapter(chapter, index, showLegend = true) {
   map.flyTo({ ...chapter.location, duration: window.matchMedia("(prefers-reduced-motion: reduce)").matches ? 0 : 1800, essential: true });
   ALL_STORY_LAYERS.forEach(layer => {
     const property = opacityProperty(layer);
@@ -158,7 +158,7 @@ function showChapter(chapter, index) {
       map.setPaintProperty(layer, "circle-stroke-opacity", opacity);
     }
   });
-  renderLegend(chapter.legend);
+  if (showLegend) renderLegend(chapter.legend);
   document.querySelectorAll(".step").forEach((element, elementIndex) => element.classList.toggle("active", elementIndex === index));
 }
 
@@ -173,7 +173,7 @@ map.on("load", () => {
   addFallbackLayers();
   mapStatus.textContent = "Map ready";
   mapStatus.classList.add("ready");
-  showChapter(storyConfig.chapters[0], 0);
+  showChapter(storyConfig.chapters[0], 0, false);
 
   const clickableLayers = ["outlets-supermarkets", "outlets-hawker-centres", "hdb-price-sqm", "hdb-floor-area", "hdb-access-context", "hdb-outside-500m"].filter(id => map.getLayer(id));
   map.on("click", event => {
