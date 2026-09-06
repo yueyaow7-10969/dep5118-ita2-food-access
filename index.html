@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="An interactive Mapbox story about food access and HDB resale prices in Singapore.">
+  <title>Is Convenience Priced In</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Karla:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://api.mapbox.com/mapbox-gl-js/v2.11.0/mapbox-gl.css" rel="stylesheet">
+  <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+  <a class="skip-link" href="#chapters">Skip to the story</a>
+  <div id="map" role="region" aria-label="Interactive map of food access and HDB resale addresses in Singapore"></div>
+  <div id="map-status" class="map-status" role="status" aria-live="polite">Loading map</div>
+  <div id="progress" aria-hidden="true"><span></span></div>
+  <aside id="legend" class="legend" aria-label="Map legend"></aside>
+
+  <main id="story">
+    <header class="hero">
+      <div class="hero-inner">
+        <p class="course">DEP5118 Community Data Gathering and Visualization</p>
+        <h1>Is Convenience<br>Priced In?</h1>
+        <p class="subtitle">Food access and HDB resale prices across Singapore</p>
+        <p class="intro">How much is everyday food access reflected in Singapore's public housing market? This story combines January-June 2021 HDB resale records with supermarkets, hawker centres and 500-metre service areas. It maps where food options are close, how prices and flat sizes vary, and which addresses fall beyond the threshold. The citywide price gap is modest, but access varies sharply between towns - showing that food convenience is a neighbourhood planning issue, not a simple proxy for expensive housing.</p>
+        <p class="byline">By Wang Yueyao</p>
+        <a class="start-link" href="#chapter-food-network">Explore the map <span aria-hidden="true">↓</span></a>
+      </div>
+    </header>
+
+    <section id="chapters" aria-label="Story chapters"></section>
+
+    <footer class="site-footer">
+      <p><strong>About the data.</strong> HDB points represent addresses with resale transactions recorded from January to June 2021, not households or population. The 500-metre layer is the service-area dataset supplied for this assignment. Results are descriptive and do not establish causation.</p>
+      <p>Built with the <a href="https://github.com/mapbox/storytelling" target="_blank" rel="noreferrer">Mapbox Storytelling</a> approach. Data supplied in DEP5118 course materials.</p>
+    </footer>
+  </main>
+
+  <script src="https://api.mapbox.com/mapbox-gl-js/v2.11.0/mapbox-gl.js"></script>
+  <script src="https://unpkg.com/scrollama@3.2.0/build/scrollama.js"></script>
+  <script src="config.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
