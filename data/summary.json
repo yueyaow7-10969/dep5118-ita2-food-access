@@ -1,0 +1,193 @@
+{
+  "transaction_records": 13713,
+  "address_points": 6163,
+  "outside_transactions": 6063,
+  "outside_addresses": 2832,
+  "outside_address_share": 0.4595,
+  "inside_median_price_sqm": 4875.06,
+  "outside_median_price_sqm": 4662.16,
+  "towns": [
+    {
+      "town": "BISHAN",
+      "addresses": 155,
+      "outside_addresses": 115,
+      "outside_share": 0.7419,
+      "median_price_sqm": 5886.72
+    },
+    {
+      "town": "MARINE PARADE",
+      "addresses": 41,
+      "outside_addresses": 29,
+      "outside_share": 0.7073,
+      "median_price_sqm": 5849.6
+    },
+    {
+      "town": "JURONG EAST",
+      "addresses": 144,
+      "outside_addresses": 94,
+      "outside_share": 0.6528,
+      "median_price_sqm": 4357.14
+    },
+    {
+      "town": "PASIR RIS",
+      "addresses": 252,
+      "outside_addresses": 155,
+      "outside_share": 0.6151,
+      "median_price_sqm": 4272.66
+    },
+    {
+      "town": "HOUGANG",
+      "addresses": 343,
+      "outside_addresses": 202,
+      "outside_share": 0.5889,
+      "median_price_sqm": 4409.09
+    },
+    {
+      "town": "BEDOK",
+      "addresses": 354,
+      "outside_addresses": 206,
+      "outside_share": 0.5819,
+      "median_price_sqm": 4572.3
+    },
+    {
+      "town": "SERANGOON",
+      "addresses": 147,
+      "outside_addresses": 75,
+      "outside_share": 0.5102,
+      "median_price_sqm": 5000.0
+    },
+    {
+      "town": "CHOA CHU KANG",
+      "addresses": 290,
+      "outside_addresses": 147,
+      "outside_share": 0.5069,
+      "median_price_sqm": 3974.48
+    },
+    {
+      "town": "GEYLANG",
+      "addresses": 166,
+      "outside_addresses": 84,
+      "outside_share": 0.506,
+      "median_price_sqm": 4829.64
+    },
+    {
+      "town": "JURONG WEST",
+      "addresses": 402,
+      "outside_addresses": 198,
+      "outside_share": 0.4925,
+      "median_price_sqm": 4145.69
+    },
+    {
+      "town": "SENGKANG",
+      "addresses": 468,
+      "outside_addresses": 225,
+      "outside_share": 0.4808,
+      "median_price_sqm": 4638.38
+    },
+    {
+      "town": "SEMBAWANG",
+      "addresses": 128,
+      "outside_addresses": 61,
+      "outside_share": 0.4766,
+      "median_price_sqm": 4200.99
+    },
+    {
+      "town": "TAMPINES",
+      "addresses": 503,
+      "outside_addresses": 239,
+      "outside_share": 0.4751,
+      "median_price_sqm": 4557.82
+    },
+    {
+      "town": "QUEENSTOWN",
+      "addresses": 140,
+      "outside_addresses": 60,
+      "outside_share": 0.4286,
+      "median_price_sqm": 6275.75
+    },
+    {
+      "town": "CLEMENTI",
+      "addresses": 132,
+      "outside_addresses": 56,
+      "outside_share": 0.4242,
+      "median_price_sqm": 5021.01
+    },
+    {
+      "town": "WOODLANDS",
+      "addresses": 417,
+      "outside_addresses": 176,
+      "outside_share": 0.4221,
+      "median_price_sqm": 4008.26
+    },
+    {
+      "town": "YISHUN",
+      "addresses": 375,
+      "outside_addresses": 155,
+      "outside_share": 0.4133,
+      "median_price_sqm": 4291.66
+    },
+    {
+      "town": "ANG MO KIO",
+      "addresses": 259,
+      "outside_addresses": 106,
+      "outside_share": 0.4093,
+      "median_price_sqm": 4537.82
+    },
+    {
+      "town": "BUKIT BATOK",
+      "addresses": 187,
+      "outside_addresses": 75,
+      "outside_share": 0.4011,
+      "median_price_sqm": 4291.05
+    },
+    {
+      "town": "BUKIT PANJANG",
+      "addresses": 226,
+      "outside_addresses": 89,
+      "outside_share": 0.3938,
+      "median_price_sqm": 4404.55
+    },
+    {
+      "town": "KALLANG/WHAMPOA",
+      "addresses": 179,
+      "outside_addresses": 64,
+      "outside_share": 0.3575,
+      "median_price_sqm": 5417.91
+    },
+    {
+      "town": "BUKIT MERAH",
+      "addresses": 246,
+      "outside_addresses": 84,
+      "outside_share": 0.3415,
+      "median_price_sqm": 5977.79
+    },
+    {
+      "town": "BUKIT TIMAH",
+      "addresses": 19,
+      "outside_addresses": 6,
+      "outside_share": 0.3158,
+      "median_price_sqm": 6461.54
+    },
+    {
+      "town": "TOA PAYOH",
+      "addresses": 194,
+      "outside_addresses": 57,
+      "outside_share": 0.2938,
+      "median_price_sqm": 4878.32
+    },
+    {
+      "town": "PUNGGOL",
+      "addresses": 347,
+      "outside_addresses": 71,
+      "outside_share": 0.2046,
+      "median_price_sqm": 5015.69
+    },
+    {
+      "town": "CENTRAL AREA",
+      "addresses": 49,
+      "outside_addresses": 3,
+      "outside_share": 0.0612,
+      "median_price_sqm": 6318.94
+    }
+  ]
+}
