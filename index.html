@@ -9,14 +9,15 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Karla:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link href="https://api.mapbox.com/mapbox-gl-js/v3.30.0/mapbox-gl.css" rel="stylesheet">
-  <link href="styles.css?v=2" rel="stylesheet">
+  <link href="styles.css?v=3" rel="stylesheet">
 </head>
-<body>
+<body id="top">
   <a class="skip-link" href="#chapters">Skip to the story</a>
+  <nav class="chapter-nav" aria-label="Story navigation"><a class="nav-title" href="#top">Is Convenience Priced In?</a><label for="chapter-select">Chapter</label><select id="chapter-select" aria-label="Go to chapter"></select><span id="chapter-position" aria-live="polite">Introduction</span></nav>
   <div id="map" role="region" aria-label="Interactive map of food access and HDB resale addresses in Singapore"></div>
   <div id="map-status" class="map-status" role="status" aria-live="polite">Loading map</div>
   <div id="progress" aria-hidden="true"><span></span></div>
-  <aside id="legend" class="legend" aria-label="Map legend"></aside>
+  <aside id="legend" class="legend" aria-label="Map legend"><details open><summary>Map legend</summary><div id="legend-body"></div></details></aside>
 
   <main id="story">
     <header class="hero">
@@ -24,23 +25,23 @@
         <p class="course">DEP5118 Community Data Gathering and Visualization</p>
         <h1>Is Convenience<br>Priced In?</h1>
         <p class="subtitle">Food access and HDB resale prices across Singapore</p>
-        <p class="intro">How much is everyday food access reflected in Singapore's public housing market? This story combines January-June 2021 HDB resale records with supermarkets, hawker centres and 500-metre service areas. It maps where food options are close, how prices and flat sizes vary, and which addresses fall beyond the threshold. The citywide price gap is modest, but access varies sharply between towns - showing that food convenience is a neighbourhood planning issue, not a simple proxy for expensive housing.</p>
+        <p class="intro">Does living near a supermarket or hawker centre coincide with higher HDB resale prices? I compare January-June 2021 transactions with the course datasets on food outlets and 500-metre service areas. The maps show prices, flat sizes and addresses outside the supplied coverage. A photograph of Yuhua Village Market and Food Centre adds a closer look at one place. The price comparison is descriptive; it does not measure the effect of food access alone.</p>
         <p class="byline">By Wang Yueyao</p>
         <a class="start-link" href="#chapter-food-network">Explore the map <span aria-hidden="true">↓</span></a>
       </div>
     </header>
 
+    <noscript><p class="noscript">JavaScript is needed for the interactive map. This story compares 2021 HDB resale transactions with supplied food-access areas. The observed price difference is 4.6%; it is not a causal estimate.</p></noscript>
     <section id="chapters" aria-label="Story chapters"></section>
 
     <footer class="site-footer">
-      <p><strong>About the data.</strong> HDB points represent addresses with resale transactions recorded from January to June 2021, not households or population. The 500-metre layer is the service-area dataset supplied for this assignment. Results are descriptive and do not establish causation.</p>
+      <p><strong>About the data.</strong> HDB points represent addresses with resale transactions recorded from January to June 2021, not households or population. The 500-metre layer is the service-area dataset supplied for this assignment. The facility and service-area dates are not specified. Access status comes from the supplied outside-area subset; it is not a new routing calculation. Results are descriptive and do not establish causation.</p>
       <p>Built with the <a href="https://github.com/mapbox/storytelling" target="_blank" rel="noreferrer">Mapbox Storytelling</a> approach. Data supplied in DEP5118 course materials.</p>
     </footer>
   </main>
 
   <script src="https://api.mapbox.com/mapbox-gl-js/v3.30.0/mapbox-gl.js"></script>
-  <script src="https://unpkg.com/scrollama@3.2.0/build/scrollama.js"></script>
-  <script src="config.js"></script>
-  <script src="app.js?v=2"></script>
+  <script src="config.js?v=3"></script>
+  <script src="app.js?v=3"></script>
 </body>
 </html>
